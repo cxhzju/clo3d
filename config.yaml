@@ -1,0 +1,19 @@
+# DLSimulation configuration file
+device : !!str 'cuda:0'
+
+# Dataset
+dataset:
+  dataset_dir: !!str /home/cxh/Documents/dataset/fitting_seq_data
+
+# Training
+training:
+  n_epoch: !!int 3
+  chunk_size: !!int 5
+  batch_size: !!int 128
+  lr: !!float 0.00025
+
+# Positional encoder
+dim_beta: !!int 10
+dim_theta: !!int 72
+n_pos_freqs: !!int 10
+n_shape_freqs: !!int 10
